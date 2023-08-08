@@ -23,7 +23,6 @@
 function searchInsert($nums, $target)
 {
   $index = array_search($target, $nums);
-  var_dump($index);
 
   if ($index == false) {
     array_push($nums, $target);
@@ -33,7 +32,7 @@ function searchInsert($nums, $target)
   return $index;
 }
 
-$input = [1, 3, 5, 6];
+$input = [1, 3, 5, 6, 7];
 $target = 7;
 
 $check = searchInsert($input, $target);
